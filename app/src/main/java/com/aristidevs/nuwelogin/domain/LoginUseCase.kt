@@ -8,4 +8,6 @@ class LoginUseCase @Inject constructor(private val authenticationService: Authen
 
     suspend operator fun invoke(email: String, password: String): LoginResult =
         authenticationService.login(email, password)
+
+
 }
